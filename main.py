@@ -1,1 +1,1 @@
-import Turtle as trtl
+import turtle as trtl
