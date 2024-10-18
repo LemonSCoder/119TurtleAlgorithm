@@ -51,7 +51,7 @@ while user_input_statement == True:
     user_input = input("Enter a number between 1 and 360: > ")
     if user_input.isnumeric():
         if float(user_input) in range(360):
-          color_palette_input = input("What color palette do you want for the shape? \n [A] Cool \n [B] Light Rainbow \n [C] Pale \n [D] Tropical \n [E] Sunset \n")
+          color_palette_input = input("What base color palette do you want for the shape? \n [A] Cool \n [B] Light Rainbow \n [C] Pale \n [D] Tropical \n [E] Sunset \n")
           if "A" in color_palette_input.upper():
             create_turtle_shape(float(user_input), 0)
           elif "B" in color_palette_input.upper():
@@ -67,10 +67,14 @@ while user_input_statement == True:
           create_new_shape = input("Do you want to create another shape? \n [Y] YES \n [N] NO \n")
           if "Y" in create_new_shape.upper():
               screen.clear()
-          else:
+          elif "N" in create_new_shape.upper():
               user_input_statement = False
               print("Goodbye.")
               sys.exit()
+          else:
+            screen.clear()
+            print("That's not a valid option!")
+            continue
         else:
             print ("That's not a number between 1 and 360!")
     else:
