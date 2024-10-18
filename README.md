@@ -8,5 +8,7 @@
 + Our code will include booleans (ex. user_input_statement), strings (ex. user_input and create_new_shape), integers (ex. index_addition and degree_turn), floats (ex. the eventual conversion of the variable user_input into a float variable), if statements, lists (ex. previous_turtles, turtle_shapes, and turtle_colors), and nested loops
 ### Video
 
+### Link to Perf Task Doc
+https://docs.google.com/document/d/11iKygGJbnxXfKnLON7xIGFWmN6H7MNS9LlgvDm_wU54/edit?usp=sharing 
 
 ### Sketch of Project
