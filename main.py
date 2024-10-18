@@ -13,8 +13,6 @@ original_turtles = previous_turtles.copy()
 
 def create_turtle_shape(degree_input, index_number):
 
-    step = 0
-
     heading = 0
 
     forward_distance = 0
@@ -40,8 +38,6 @@ def create_turtle_shape(degree_input, index_number):
                 turtle.left(180)
             forward_distance += 100
             turtle.left(degree_input)
-        
-    step += 1
 
 user_input_statement = True
 
