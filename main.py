@@ -19,8 +19,6 @@ def create_turtle_shape(degree_input, index_number):
 
     forward_distance = 0
 
-    speed = 0
-
     degree_turn = 0
 
     index_addition = 0
@@ -41,7 +39,7 @@ def create_turtle_shape(degree_input, index_number):
             if forward_distance >= 8000 and forward_distance <= 8700:
                 turtle.left(180)
             forward_distance += 100
-            turtle.left(float(user_input))
+            turtle.left(degree_input)
         
     step += 1
 
