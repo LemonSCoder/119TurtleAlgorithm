@@ -23,13 +23,16 @@ def create_turtle_shape(degree_input):
 
     degree_turn = 0
 
+    index_addition = 0
+
     for turtle_shape in turtle_shapes:
         pen = trtl.Turtle(shape = turtle_shape)
         pen.speed(20)
         previous_turtles.append(pen)
-        new_color = turtle_colors.pop()
+        new_color = turtle_colors[index_addition]
         pen.color(new_color)
         pen.left(degree_turn)
+        index_addition += 1
         degree_turn += 45
 
     for step in range(50):
